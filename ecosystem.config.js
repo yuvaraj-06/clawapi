@@ -13,7 +13,8 @@ module.exports = {
       max_restarts: 10,
       restart_delay: 3000,
       env: {
-        NODE_ENV: "production"
+        NODE_ENV: "production",
+        ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY || ""
       },
       error_file: "/home/ubuntu/clawapi/logs/pm2-error.log",
       out_file: "/home/ubuntu/clawapi/logs/pm2-out.log",
